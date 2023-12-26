@@ -10,10 +10,12 @@ export default function HomeSection() {
           <h3>Full Stack Developer</h3>
           <span className="animate" style={{'--i': 3}}></span>
         </div>
-        <p>
-            
-          <span className="animate" style={{'--i': 4}}></span>
+        
+      {/*
+        <p> 
+          <span className="animate" style={{'--i': 4}}></span> 
         </p>
+      */}
 
         <div className="btn-box">
         {/*  <a href="#contact" className="btn">Hire Me</a> */}
@@ -30,7 +32,7 @@ export default function HomeSection() {
       </div>
 
       <div className="home-imgHover"></div>
-      <span className="animate home-img" style={{'--i': 7}}></span>
+     {/* <span className="animate home-img" style={{'--i': 7}}></span> */}
     </section>
   );
 }
