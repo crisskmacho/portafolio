@@ -446,6 +446,18 @@ span {
   padding-top: .5rem;
 }
 
+.education-content .content img {
+  flex: 0 0 auto; /* Evita que la imagen se expanda */
+  margin-right: 1rem; /* Espacio entre la imagen y el texto */
+}
+
+.education-content .content  img {
+  max-width: 30%; /* Ajusta el tamaño máximo de la imagen */
+  opacity: 0.5;
+  border-radius: 20%;
+  float: left;
+}
+
 
 /* SKILL SECTION */
 .skills {

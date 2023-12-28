@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../index.css'
+import About from '../img/About.jpeg'
 
 export default function EducationSection() {
   return (
@@ -13,6 +14,7 @@ export default function EducationSection() {
           <div className="education-box">
             <div className="education-content">
               <div className="content">
+                <img src={About} alt="Descripción de la imagen" />
                 <div className="year"><i className='bx bxs-calendar'></i> 2017 - 2018</div>
                 <h3>Master Degree - University</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quisquam harum modi fugit vero laborum, 
