@@ -88,7 +88,7 @@ body{
   flex-direction: column;
   align-items: center;
   padding: 20%;
-  background: url(./components/img/batman2.png) no-repeat;
+  background: url(./components/img/batman.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -549,35 +549,51 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-  width: 90%;
+  width: 100%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-  width: 50%;
+  width: 80%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-  width: 50%;
+  width: 80%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-  width: 80%;
+  width: 100%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+  width: 100%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+  width: 70%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-  width: 40%;
+  width: 10%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-  width: 60%;
+  width: 100%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-  width: 50%;
+  width: 100%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-  width: 80%;
+  width: 100%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+  width: 40%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span {
+  width: 40%;
 }
 
 /* CONTACT SECTION */
@@ -660,6 +676,10 @@ span {
 
 .contact form .btn-box.btns .btn {
   cursor: pointer;
+}
+
+.error-alert{
+  background-color: red;
 }
 
 

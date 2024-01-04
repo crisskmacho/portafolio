@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../../index.css'
 import axios from 'axios';
+import swal from 'sweetalert';
 
 export default function ContactSection() {
 
@@ -11,8 +12,6 @@ export default function ContactSection() {
     emailSubject: '',
     message: '',
   });
-
-  const [sentMessage, setSentMessage] = useState(''); // Estado para el mensaje de éxito
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,7 +25,7 @@ export default function ContactSection() {
     e.preventDefault();
     try {
       await axios.post('http://localhost:3001/api/enviar-correo', formData);
-      setSentMessage('Mensaje enviado correctamente'); // Establecer el mensaje de éxito
+      swal('Mensaje enviado correctamente', '', 'success'); // Establecer el mensaje de éxito
       setFormData({ // Limpiar los campos del formulario
         fullName: '',
         emailAddress: '',
@@ -35,15 +34,13 @@ export default function ContactSection() {
         message: '',
       });
     } catch (error) {
-      console.error('Error al enviar el correo', error);
+      swal('Error al enviar el correo', '', 'error');
     }
   };
   
     return (
         <section className="contact" id="contact">
           <h2 className="heading">Contact <span>Me!</span><span className="animate scroll" style={{'--i': 1}}></span></h2>
-
-          {sentMessage && <p>{sentMessage}</p>} {/* Mostrar el mensaje de éxito si está presente */}
     
           <form onSubmit={handleSubmit} action="#">
             <div className="input-box">
