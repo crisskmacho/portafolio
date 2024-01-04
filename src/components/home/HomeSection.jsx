@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../index.css'
+import CV from '../img/CV_Cristian_Camacho.pdf'
 
 export default function HomeSection() {
   return (
@@ -11,14 +12,13 @@ export default function HomeSection() {
           <span className="animate" style={{'--i': 3}}></span>
         </div>
         
-      {/*
         <p> 
           <span className="animate" style={{'--i': 4}}></span> 
         </p>
-      */}
+
 
         <div className="btn-box">
-        {/*  <a href="#contact" className="btn">Hire Me</a> */}
+          <a href={CV} download={CV} className="btn">CV Download</a> 
           <a href="#contact" className="btn">Let's Talk</a>
           <span className="animate" style={{'--i': 5}}></span>
         </div>
