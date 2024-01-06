@@ -24,7 +24,7 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/api/enviar-correo', formData);
+      await axios.post('https://backportafolio.onrender.com/api/enviar-correo', formData);
       swal('Mensaje enviado correctamente', '', 'success'); // Establecer el mensaje de éxito
       setFormData({ // Limpiar los campos del formulario
         fullName: '',
